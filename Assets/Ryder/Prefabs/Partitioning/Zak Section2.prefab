@@ -1,0 +1,183 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5244834961987146915
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2921589939569478225}
+  m_Layer: 0
+  m_Name: Zak Section2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2921589939569478225
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5244834961987146915}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -932.0311, y: -75.89077, z: 815.80334}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2201730868859508876}
+  - {fileID: 4450115020459816059}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &423240135053772229
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2921589939569478225}
+    m_Modifications:
+    - target: {fileID: 4043769165590475198, guid: c062ea3d516954649a6eb48b3d4662b7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 261.62115
+      objectReference: {fileID: 0}
+    - target: {fileID: 4043769165590475198, guid: c062ea3d516954649a6eb48b3d4662b7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 188.09076
+      objectReference: {fileID: 0}
+    - target: {fileID: 4043769165590475198, guid: c062ea3d516954649a6eb48b3d4662b7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -349.40335
+      objectReference: {fileID: 0}
+    - target: {fileID: 4043769165590475198, guid: c062ea3d516954649a6eb48b3d4662b7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4043769165590475198, guid: c062ea3d516954649a6eb48b3d4662b7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4043769165590475198, guid: c062ea3d516954649a6eb48b3d4662b7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4043769165590475198, guid: c062ea3d516954649a6eb48b3d4662b7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4043769165590475198, guid: c062ea3d516954649a6eb48b3d4662b7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4043769165590475198, guid: c062ea3d516954649a6eb48b3d4662b7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4043769165590475198, guid: c062ea3d516954649a6eb48b3d4662b7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580550583882760783, guid: c062ea3d516954649a6eb48b3d4662b7,
+        type: 3}
+      propertyPath: m_Name
+      value: Zak Storage Side Room 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c062ea3d516954649a6eb48b3d4662b7, type: 3}
+--- !u!4 &4450115020459816059 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4043769165590475198, guid: c062ea3d516954649a6eb48b3d4662b7,
+    type: 3}
+  m_PrefabInstance: {fileID: 423240135053772229}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1595178230864748350
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2921589939569478225}
+    m_Modifications:
+    - target: {fileID: 625200631287842738, guid: ccda281a826c4624db974996178bd6df,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 89.43115
+      objectReference: {fileID: 0}
+    - target: {fileID: 625200631287842738, guid: ccda281a826c4624db974996178bd6df,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 191.69077
+      objectReference: {fileID: 0}
+    - target: {fileID: 625200631287842738, guid: ccda281a826c4624db974996178bd6df,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -340.30334
+      objectReference: {fileID: 0}
+    - target: {fileID: 625200631287842738, guid: ccda281a826c4624db974996178bd6df,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 625200631287842738, guid: ccda281a826c4624db974996178bd6df,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 625200631287842738, guid: ccda281a826c4624db974996178bd6df,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 625200631287842738, guid: ccda281a826c4624db974996178bd6df,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 625200631287842738, guid: ccda281a826c4624db974996178bd6df,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 625200631287842738, guid: ccda281a826c4624db974996178bd6df,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 625200631287842738, guid: ccda281a826c4624db974996178bd6df,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3933632854651832716, guid: ccda281a826c4624db974996178bd6df,
+        type: 3}
+      propertyPath: m_Name
+      value: Zak Storage
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ccda281a826c4624db974996178bd6df, type: 3}
+--- !u!4 &2201730868859508876 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 625200631287842738, guid: ccda281a826c4624db974996178bd6df,
+    type: 3}
+  m_PrefabInstance: {fileID: 1595178230864748350}
+  m_PrefabAsset: {fileID: 0}
