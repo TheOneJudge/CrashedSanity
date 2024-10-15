@@ -6,7 +6,7 @@
             "id": "ba474d44-2be7-452d-9982-377d83bcedb5",
             "actions": [
                 {
-                    "name": "Movment",
+                    "name": "Jog",
                     "type": "PassThrough",
                     "id": "e61f4382-b714-4383-b05b-9e09a70e8af1",
                     "expectedControlType": "Vector2",
@@ -31,6 +31,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Walk",
+                    "type": "Button",
+                    "id": "5d4bf0a8-6602-42b8-a684-b174fa59941a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Sprint",
+                    "type": "Button",
+                    "id": "92beb3e1-e3e9-4e20-b82d-573474d5ea7f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -41,7 +59,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Movment",
+                    "action": "Jog",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -52,7 +70,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Player 1",
-                    "action": "Movment",
+                    "action": "Jog",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -63,7 +81,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Player 1",
-                    "action": "Movment",
+                    "action": "Jog",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -74,7 +92,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Player 1",
-                    "action": "Movment",
+                    "action": "Jog",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -85,7 +103,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Player 1",
-                    "action": "Movment",
+                    "action": "Jog",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -96,7 +114,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Movment",
+                    "action": "Jog",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -107,7 +125,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Player 2",
-                    "action": "Movment",
+                    "action": "Jog",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -118,7 +136,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Player 2",
-                    "action": "Movment",
+                    "action": "Jog",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -129,7 +147,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Player 2",
-                    "action": "Movment",
+                    "action": "Jog",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -140,7 +158,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Player 2",
-                    "action": "Movment",
+                    "action": "Jog",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -185,6 +203,28 @@
                     "processors": "",
                     "groups": "Player 1",
                     "action": "onLook",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d5fd27be-68a3-4857-a3ae-a178595fdb39",
+                    "path": "<Keyboard>/leftCtrl",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "Player 1",
+                    "action": "Walk",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cbecf44d-fd10-43f8-90f7-f243ac8bad82",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "Player 1",
+                    "action": "Sprint",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
