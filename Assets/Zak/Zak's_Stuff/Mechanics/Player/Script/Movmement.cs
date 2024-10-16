@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,6 +9,7 @@ using UnityEngine.InputSystem;
         private CharacterController controller;
         private Vector3 playerVelocity;
         private bool groundedPlayer;
+        public Animator animator;
 
         [SerializeField]
         private float playerSpeed = 2.0f; // Jogging speed
@@ -106,6 +108,7 @@ using UnityEngine.InputSystem;
             if (isWalking)
             {
                 currentSpeed = walkSpeed;
+                //animator.Set
             }
             else if (isSprinting)
             {
