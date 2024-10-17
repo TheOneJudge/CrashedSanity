@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,6 +9,9 @@ using UnityEngine.InputSystem;
         private CharacterController controller;
         private Vector3 playerVelocity;
         private bool groundedPlayer;
+        public Animator animator;
+        float speed;
+
 
         [SerializeField]
         private float playerSpeed = 2.0f; // Jogging speed
@@ -102,7 +106,7 @@ using UnityEngine.InputSystem;
 
             // Adjust movement speed based on state (walking, jogging, or sprinting)
             float currentSpeed = playerSpeed; // Default jog speed
-
+            
             if (isWalking)
             {
                 currentSpeed = walkSpeed;
@@ -113,6 +117,12 @@ using UnityEngine.InputSystem;
             }
 
             controller.Move(move * Time.deltaTime * currentSpeed);
+
+            //Kevyns Code
+                speed = controller.velocity.magnitude;
+                animator.SetFloat("playerSpeed", speed);
+                print(speed);
+            
 
             // Handle jumping
             if (Jumped && groundedPlayer)
