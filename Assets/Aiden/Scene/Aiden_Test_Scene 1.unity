@@ -187,7 +187,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 4584b3b1bee63ca4aa6849153872d005,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.15999985
+      value: -0.16
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4584b3b1bee63ca4aa6849153872d005,
         type: 3}
@@ -260,6 +260,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 588109743}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4584b3b1bee63ca4aa6849153872d005,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 588109744}
   m_SourcePrefab: {fileID: 100100000, guid: 4584b3b1bee63ca4aa6849153872d005, type: 3}
 --- !u!4 &588109738 stripped
 Transform:
@@ -307,9 +311,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 588109740}
-  playerSpeed: 2
-  walkSpeed: 1
-  sprintSpeed: 4
+  playerSpeed: 5
+  walkSpeed: 2
+  sprintSpeed: 8
   jumpHeight: 1
   gravityValue: -9.81
   cameraTransform: {fileID: 980199254}
@@ -452,6 +456,48 @@ MonoBehaviour:
   m_DefaultActionMap: Player 2
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!23 &588109744
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588109739}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 257
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &900541642
 GameObject:
   m_ObjectHideFlags: 0
