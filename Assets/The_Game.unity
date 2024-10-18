@@ -24,7 +24,7 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 4
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
@@ -1475,8 +1475,13 @@ PrefabInstance:
       value: AidenSteynAstronautBodyConceptForUnity
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: -5307268574575200904, guid: d968529b82429a34aa3b94e23561860b, type: 3}
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: d968529b82429a34aa3b94e23561860b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1848536702}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d968529b82429a34aa3b94e23561860b, type: 3}
 --- !u!1 &214274455
@@ -8123,6 +8128,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1201562835}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1222648607 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d968529b82429a34aa3b94e23561860b,
+    type: 3}
+  m_PrefabInstance: {fileID: 198720318}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1228009699
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12603,13 +12614,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1848536699}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.8, z: -10}
+  m_LocalRotation: {x: 0.08768173, y: -0.00000046015683, z: 0.000000040503345, w: 0.9961485}
+  m_LocalPosition: {x: 7.1099987, y: 8.88, z: -3.4399986}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 1222648607}
+  m_LocalEulerAnglesHint: {x: 10.061, y: 0, z: 0}
 --- !u!114 &1848536703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14520,7 +14531,6 @@ MonoBehaviour:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1848536702}
   - {fileID: 2144028921}
   - {fileID: 1849893234}
   - {fileID: 1562695422}
