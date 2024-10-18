@@ -29,19 +29,27 @@ public class Navigation_Menu : MonoBehaviour
         }
     }
 
-    // Opens the Tab menu and pauses the game
+    // Opens the Tab menu and pauses the game, enables the mouse cursor
     void OpenTabMenu()
     {
         navigationPanel.SetActive(true);
         Time.timeScale = 0f;  // Pause the game
         isTabMenuOpen = true;
+
+        // Enable and unlock the cursor
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
-    // Closes the Tab menu and resumes the game
+    // Closes the Tab menu and resumes the game, hides the mouse cursor
     void CloseTabMenu()
     {
         navigationPanel.SetActive(false);
         Time.timeScale = 1f;  // Resume the game
         isTabMenuOpen = false;
+
+        // Lock and hide the cursor again
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 }
