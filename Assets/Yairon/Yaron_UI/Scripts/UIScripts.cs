@@ -6,55 +6,56 @@ public class UIScripts : MonoBehaviour
 {
 
     public static bool gameIsPaused = false;
+    public GameObject pauseMenuUI;
+    public Navigation_Menu tabMenuScript;  // Reference to the Navigation Menu script
 
-public GameObject pauseMenuUI;
-
-private void Start()
-{
-    Cursor.visible = false;
-}
-
-private void Update()
-{
-    if (Input.GetKeyUp(KeyCode.Escape))
+    private void Start()
     {
-        if (gameIsPaused)
+        Cursor.visible = false;
+    }
+
+    private void Update()
+    {
+        // Escape key press to toggle the pause menu, only if the Tab menu is not open
+        if (Input.GetKeyUp(KeyCode.Escape) && !tabMenuScript.isTabMenuOpen)
         {
-            Resume();
-        }
-        else
-        {
-            Pause();
+            if (gameIsPaused)
+            {
+                Resume();
+            }
+            else
+            {
+                Pause();
+            }
         }
     }
-}
 
-public void Resume()
-{
-    pauseMenuUI.SetActive(false);
-    Time.timeScale = 1f;
-    gameIsPaused = false;
-    Cursor.lockState = CursorLockMode.Locked;
-    Cursor.visible = false;
-}
+    public void Resume()
+    {
+        pauseMenuUI.SetActive(false);
+        Time.timeScale = 1f;
+        gameIsPaused = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
 
-void Pause()
-{
-    Cursor.lockState = CursorLockMode.None;
-    pauseMenuUI.SetActive(true);
-    Time.timeScale = 0f;
-    gameIsPaused = true;
-    Cursor.visible = true;
-}
+    void Pause()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        pauseMenuUI.SetActive(true);
+        Time.timeScale = 0f;
+        gameIsPaused = true;
+        Cursor.visible = true;
+    }
 
-public void OnMenu()
-{
-    SceneManager.LoadScene("MainMenu");
-}
+    public void OnMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 
-public void OnQuit()
-{
-    Application.Quit();
-}
+    public void OnQuit()
+    {
+        Application.Quit();
+    }
 
 }
