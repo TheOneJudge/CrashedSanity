@@ -2,36 +2,41 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class PickupItem : MonoBehaviour
 {
-    public Item item; // Assign this in the Inspector
+    public string itemID; // e.g., "ID.1224"
+    public GameObject inventory; // Reference to the Inventory GameObject
+    public float pickupRange = 2f; // Distance within which the player can pick up the item
 
-    private InventoryManager inventoryManager;
+    private bool isPlayerInRange = false; // Track if player is in range
 
-    void Start()
+    private void Update()
     {
-        inventoryManager = FindObjectOfType<InventoryManager>(); // Get the InventoryManager
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player")) // Ensure the player has the correct tag
+        // Check if the player is within pickup range
+        if (isPlayerInRange && Input.GetKeyDown(KeyCode.E)) // Check if E is pressed
         {
-            PickUpItem(item);
-            Destroy(gameObject); // Destroy the pickup object after collection
+            // Disable the object
+            gameObject.SetActive(false);
+
+            // Call method in the inventory to enable the specific panel
+            Inventory inventoryScript = inventory.GetComponent<Inventory>();
+            inventoryScript.EnablePanel(itemID);
         }
     }
 
-    private void PickUpItem(Item item)
+    private void OnTriggerEnter(Collider other)
     {
-        if (inventoryManager != null)
+        if (other.CompareTag("Player")) // Assuming the player has the "Player" tag
         {
-            inventoryManager.AddItem(item.ID);
-            Debug.Log($"Picked up: {item.Name}");
+            isPlayerInRange = true; // Set the flag when the player enters the range
         }
-        else
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player")) // Assuming the player has the "Player" tag
         {
-            Debug.LogError("InventoryManager not found.");
+            isPlayerInRange = false; // Reset the flag when the player exits the range
         }
     }
 }
