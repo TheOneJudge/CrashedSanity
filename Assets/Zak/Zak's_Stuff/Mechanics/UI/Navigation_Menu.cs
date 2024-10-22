@@ -4,6 +4,7 @@ public class Navigation_Menu : MonoBehaviour
 {
     public GameObject navigationPanel;  // Your Tab menu panel
     public UIScripts pauseMenuScript;   // Reference to the Pause Menu (UIScripts)
+    public GameObject optionsBar;
 
     public bool isTabMenuOpen = false;
 
@@ -42,6 +43,7 @@ public class Navigation_Menu : MonoBehaviour
     void OpenTabMenu()
     {
         navigationPanel.SetActive(true);
+        optionsBar.SetActive(true);  // Activate the options bar
         Time.timeScale = 0f;  // Pause the game
         isTabMenuOpen = true;
 
@@ -54,6 +56,7 @@ public class Navigation_Menu : MonoBehaviour
     void CloseTabMenu()
     {
         navigationPanel.SetActive(false);
+        optionsBar.SetActive(false);  // Deactivate the options bar
         Time.timeScale = 1f;  // Resume the game
         isTabMenuOpen = false;
 
