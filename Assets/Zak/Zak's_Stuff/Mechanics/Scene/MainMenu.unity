@@ -2201,7 +2201,7 @@ MonoBehaviour:
   mainMenu: {fileID: 1050856331}
   videoRawImage: {fileID: 111505813}
   mainMenuOST: {fileID: 1050856336}
-  manualVideoLength: 16
+  manualVideoLength: 13
 --- !u!1 &1153994507
 GameObject:
   m_ObjectHideFlags: 0
