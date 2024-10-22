@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2262.547, g: 2404.0745, b: 3501.6685, a: 1}
+  m_IndirectSpecularColor: {r: 2285.0168, g: 2449.4104, b: 3619.5435, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1355,8 +1355,9 @@ GameObject:
   - component: {fileID: 316955608}
   - component: {fileID: 316955607}
   - component: {fileID: 316955606}
+  - component: {fileID: 316955611}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Example Item
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1460,6 +1461,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &316955611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316955605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4a302c3043755d4eb16587d60b330ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 316955606}
 --- !u!1 &387588818
 GameObject:
   m_ObjectHideFlags: 0
@@ -4037,6 +4051,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1144611054}
   m_CullTransparentMesh: 1
+--- !u!1 &1192444048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1192444050}
+  - component: {fileID: 1192444049}
+  m_Layer: 0
+  m_Name: InventoryManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1192444049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192444048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 413a834acb842414d9ef78a1a1de69e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1192444050
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192444048}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5588412, y: -8.847851, z: 14.991059}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1194910653
 GameObject:
   m_ObjectHideFlags: 0
@@ -4048,6 +4106,7 @@ GameObject:
   - component: {fileID: 1194910654}
   - component: {fileID: 1194910656}
   - component: {fileID: 1194910655}
+  - component: {fileID: 1194910657}
   m_Layer: 5
   m_Name: Inventory
   m_TagString: Untagged
@@ -4119,6 +4178,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1194910653}
   m_CullTransparentMesh: 1
+--- !u!114 &1194910657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194910653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c11409c38eefc74ebb4d2efa2156cc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventoryPanels:
+  - {fileID: 1076504997}
+  - {fileID: 460093000}
+  - {fileID: 1342599785}
+  - {fileID: 1287917628}
+  - {fileID: 1423354321}
 --- !u!1 &1210414311
 GameObject:
   m_ObjectHideFlags: 0
@@ -6321,3 +6398,4 @@ SceneRoots:
   - {fileID: 2146214909}
   - {fileID: 1210414315}
   - {fileID: 316955610}
+  - {fileID: 1192444050}
