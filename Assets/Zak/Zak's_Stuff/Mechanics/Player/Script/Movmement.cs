@@ -38,6 +38,10 @@ private float maxLookAngle = 80.0f; // Limit the vertical look angle to prevent 
 // State management for walking, jogging, and sprinting
 private bool isWalking = false;
 private bool isSprinting = false;
+    //SoundPeripherals
+private bool walkingSound = false;
+public AudioSource playerAudio;
+public AudioClip jogSound;
 
 private void Start()
 {
@@ -49,7 +53,25 @@ private void Start()
 public void OnJog(InputAction.CallbackContext context)
 {
     MovementInput = context.ReadValue<Vector2>();
-}
+        walkingSound = true;
+        PlayJogSound();
+        
+
+
+    }
+    public void PlayJogSound()
+    {
+        if (playerAudio != null && jogSound != null && walkingSound != false)
+        {
+            playerAudio.clip = jogSound;
+            playerAudio.Play();
+        }
+        else if (walkingSound != true)
+        {
+            playerAudio.clip = jogSound;
+            playerAudio.Stop();
+        }
+    }
 
 // Walk when Ctrl is pressed, toggle back to jogging when pressed again
 public void OnWalk(InputAction.CallbackContext context)
