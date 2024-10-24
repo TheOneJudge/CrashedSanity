@@ -7,7 +7,6 @@ public class UIScripts : MonoBehaviour
 
     public static bool gameIsPaused = false;
     public GameObject pauseMenuUI;
-    public Navigation_Menu tabMenuScript;  // Reference to the Navigation Menu script
 
     private void Start()
     {
@@ -16,8 +15,7 @@ public class UIScripts : MonoBehaviour
 
     private void Update()
     {
-        // Escape key press to toggle the pause menu, only if the Tab menu is not open
-        if (Input.GetKeyUp(KeyCode.Escape) && !tabMenuScript.isTabMenuOpen)
+        if (Input.GetKeyUp(KeyCode.Escape))
         {
             if (gameIsPaused)
             {
