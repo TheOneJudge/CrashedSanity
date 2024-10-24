@@ -16,15 +16,10 @@ public class Computer : MonoBehaviour
 
     public Generator specificGenerator;
 
-    public string correctPassword = "YourPassword"; // Set your password here
-    public GameObject menuPanel; // Drag your menu panel here
-    public GameObject passwordPanel; // Drag the password panel here
-    public InputField passwordInputField;
-
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        menuPanel.SetActive(false);
+
         computerUIPanel.SetActive(false);
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
@@ -47,35 +42,12 @@ public class Computer : MonoBehaviour
         }
     }
 
-    public void CheckPassword()
-    {
-        if (passwordInputField.text == correctPassword)
-        {
-            UnlockMenu();
-        }
-        else
-        {
-            Debug.Log("Incorrect Password");
-            // Optionally display an error message
-        }
-    }
-
-    void UnlockMenu()
-    {
-        menuPanel.SetActive(true);  // Enable your menu panel
-        passwordPanel.SetActive(false);  // Disable the password panel
-        passwordInputField.interactable = false;  // Disable further input
-    }
-
     private void OpenComputerUI()
     {
         computerUIPanel.SetActive(true);
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         Time.timeScale = 0f;
-
-        // Call AccessComputer() to reset the password panel
-        AccessComputer();
     }
 
     public void OpenDoor()
@@ -92,14 +64,6 @@ public class Computer : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         Time.timeScale = 1f;
-    }
-
-    public void AccessComputer()
-    {
-        passwordInputField.text = "";  // Clear the input field
-        passwordInputField.interactable = true;  // Re-enable the input field
-        passwordPanel.SetActive(true);  // Show the password panel again
-        menuPanel.SetActive(false);  // Keep the menu panel hidden until password is entered again
     }
 
     void OnDrawGizmosSelected()

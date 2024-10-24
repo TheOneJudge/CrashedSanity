@@ -21,7 +21,7 @@ public class CinematicManager : MonoBehaviour
         mainMenuOST.Stop();               // Ensure the OST is stopped at the start
 
         // Define how many seconds before the end you'd like to pause (e.g., 1 second)
-        double secondsBeforeEnd = 6.0;    // Adjust this value as needed
+        double secondsBeforeEnd = 9.0;    // Adjust this value as needed
 
         // Calculate when to pause: total length minus a few seconds
         double pauseTime = manualVideoLength - secondsBeforeEnd;
