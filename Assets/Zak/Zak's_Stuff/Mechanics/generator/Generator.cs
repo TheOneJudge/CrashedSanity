@@ -10,9 +10,8 @@ public class Generator : MonoBehaviour
 
     private Transform player;
 
-    private AudioSource audioSource;
+    public AudioSource generatorOn;
 
-    public AudioClip generatorSound;
 
     public bool IsPowered()
     {
@@ -21,15 +20,7 @@ public class Generator : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-
-        audioSource = GetComponent<AudioSource>();
-        
-        if (audioSource != null && generatorSound != null)
-        {
-            audioSource.clip = generatorSound;
-            audioSource.loop = true;
-        }
+        player = GameObject.FindGameObjectWithTag("Player").transform;     
     }
 
     void Update()
@@ -50,32 +41,17 @@ public class Generator : MonoBehaviour
     private void ToggleGenerator()
     {
         isOn = !isOn;
+
+        if(isOn)
+        {
+            generatorOn.enabled = true;
+        }
+        else if(!isOn)
+        {
+            generatorOn.enabled = false;
+        }
+        
         Debug.Log($"{gameObject.name} generator is now " + (isOn ? "ON" : "OFF")); 
-
-        if (isOn)
-        {
-            PlayGeneratorSound();
-        }
-        else
-        {
-            StopGeneratorSound();
-        }
-    }
-
-    private void PlayGeneratorSound()
-    {
-        if (audioSource != null)
-        {
-            audioSource.Play();
-        }
-    }
-
-    private void StopGeneratorSound()
-    {
-        if (audioSource != null)
-        {
-            audioSource.Stop();
-        }
     }
 
     void OnDrawGizmosSelected()
