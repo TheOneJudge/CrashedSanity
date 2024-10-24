@@ -130,7 +130,7 @@ void Update()
         currentSpeed = sprintSpeed;
     }
 
-     if (speed > 0 && speed < 2 && !walking.isPlaying) // Player is moving and sound is not playing
+        if (speed > 0 && speed < 10.1 && !walking.isPlaying) // Player is moving and sound is not playing
         {
             walking.enabled = true;
             Jog.enabled = false;
@@ -141,26 +141,26 @@ void Update()
             walking.enabled = false;
         }
 
-        if (speed > 2.1 && speed < 5 && !Jog.isPlaying) // Player is moving and sound is not playing
+        if (speed > 10 && speed < 35 && !Jog.isPlaying) // Player is moving and sound is not playing
         {
             Jog.enabled = true;
             walking.enabled = false;
             sprint.enabled = false;
         }
 
-        else if (speed == 0 && speed < 2 && Jog.isPlaying) // Player stopped moving
+        else if (speed == 0 && speed < 10 && Jog.isPlaying) // Player stopped moving
         {
             Jog.enabled = false;
         }
 
-        if (speed > 5.1 && !sprint.isPlaying) // Player is moving and sound is not playing
+        if (speed > 30 && !sprint.isPlaying) // Player is moving and sound is not playing
         {
             sprint.enabled = true;
             walking.enabled = false;
             Jog.enabled = false;
         }
 
-        else if (speed == 0 && speed < 5 && sprint.isPlaying) // Player stopped moving
+        else if (speed == 0 && speed < 25 && sprint.isPlaying) // Player stopped moving
         {
             sprint.enabled = false;
         }
