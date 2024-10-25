@@ -11,6 +11,14 @@ private bool groundedPlayer;
 public Animator animator;
 float speed;
 
+    public AudioSource walking;
+    public AudioSource Jog;
+    public AudioSource sprint;
+
+    public AudioSource jump;
+    public AudioSource land;
+
+
 [SerializeField]
 private float playerSpeed = 2.0f; // Jogging speed
 [SerializeField]
@@ -84,6 +92,7 @@ public void OnLook(InputAction.CallbackContext context)
 public void OnJump(InputAction.CallbackContext context)
 {
     Jumped = context.action.triggered;
+    jump.enabled = true;
 }
 
 void Update()
@@ -95,6 +104,7 @@ void Update()
     if (groundedPlayer && playerVelocity.y < 0)
     {
         playerVelocity.y = 0f;
+        land.enabled = true;
     }
 
     // Convert movement input based on camera's forward direction
@@ -119,6 +129,50 @@ void Update()
     {
         currentSpeed = sprintSpeed;
     }
+
+        if (speed > 0 && speed < 10.1 && !walking.isPlaying) // Player is moving and sound is not playing
+        {
+            walking.enabled = true;
+            Jog.enabled = false;
+            sprint.enabled = false;
+        }
+        else if (speed == 0 && walking.isPlaying) // Player stopped moving
+        {
+            walking.enabled = false;
+        }
+
+        if (speed > 10 && speed < 35 && !Jog.isPlaying) // Player is moving and sound is not playing
+        {
+            Jog.enabled = true;
+            walking.enabled = false;
+            sprint.enabled = false;
+        }
+
+        else if (speed == 0 && speed < 10 && Jog.isPlaying) // Player stopped moving
+        {
+            Jog.enabled = false;
+        }
+
+        if (speed > 30 && !sprint.isPlaying) // Player is moving and sound is not playing
+        {
+            sprint.enabled = true;
+            walking.enabled = false;
+            Jog.enabled = false;
+        }
+
+        else if (speed == 0 && speed < 25 && sprint.isPlaying) // Player stopped moving
+        {
+            sprint.enabled = false;
+        }
+
+        // Handle jumping
+        if (Jumped && groundedPlayer)
+        {
+            playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
+            jump.enabled = false;
+            land.enabled = false;
+        }
+
 
     // Move the player forward or backward
     controller.Move(move * Time.deltaTime * currentSpeed);
