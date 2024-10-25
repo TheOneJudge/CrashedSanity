@@ -11,7 +11,7 @@ public class UIScript : MonoBehaviour
 
     public void OnStart()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("The_Game");
         Debug.Log("start");
     }
 

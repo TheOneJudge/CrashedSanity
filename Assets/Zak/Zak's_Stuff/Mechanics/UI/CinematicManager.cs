@@ -11,7 +11,7 @@ public class CinematicManager : MonoBehaviour
     public RawImage videoRawImage;        // The RawImage component (e.g., "Video")
     public AudioSource mainMenuOST;       // The AudioSource for the main menu OST
 
-    public double manualVideoLength = 60.0; // Manually set video length (seconds)
+    public double manualVideoLength = 8.0; // Manually set video length (seconds)
     private bool canProceed = false;
 
     void Start()
@@ -21,7 +21,7 @@ public class CinematicManager : MonoBehaviour
         mainMenuOST.Stop();               // Ensure the OST is stopped at the start
 
         // Define how many seconds before the end you'd like to pause (e.g., 1 second)
-        double secondsBeforeEnd = 8.5;    // Adjust this value as needed
+        double secondsBeforeEnd = 6.5;    // Adjust this value as needed
 
         // Calculate when to pause: total length minus a few seconds
         double pauseTime = manualVideoLength - secondsBeforeEnd;
