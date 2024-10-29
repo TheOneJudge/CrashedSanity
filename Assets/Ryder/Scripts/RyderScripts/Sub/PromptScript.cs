@@ -6,15 +6,40 @@ public class PromptScript : MonoBehaviour
     public GameObject promptPrefab; // Prefab for the prompt
     public Vector3 offset = Vector3.up; // Adjustable offset for the prompt position
     public float radius = 10f; // Radius in which the prompt will appear
-    public int maxPromptCount = 1; 
+    public int maxPromptCount = 1;
 
     private List<GameObject> spawnedPrompts = new List<GameObject>(); // List to keep track of spawned prompts
-    private Transform mainCamera; // Reference to the main camera (overridden)
+    protected Transform playerTransform; // Reference to the player's transform
 
-    private void Start()
+    protected virtual void Start() // Change to protected virtual to allow access in derived classes
     {
-        // (overridden)
-        // mainCamera = Camera.main.transform;
+        // Find the player in the scene
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            playerTransform = player.transform;
+        }
+        else
+        {
+            Debug.LogError("Player not found in the scene. Please ensure the player is tagged as 'Player'.");
+        }
+    }
+
+    protected virtual void Update() // Change to protected virtual to allow access in derived classes
+    {
+        if (playerTransform == null) return; // Do nothing if the player is not found
+
+        // Rotate each spawned prompt to face the player
+        foreach (GameObject prompt in spawnedPrompts)
+        {
+            if (prompt != null)
+            {
+                Vector3 directionToPlayer = playerTransform.position - prompt.transform.position;
+                directionToPlayer.y = 0; // Keep the rotation level
+                Quaternion targetRotation = Quaternion.LookRotation(directionToPlayer);
+                prompt.transform.rotation = targetRotation;
+            }
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -34,24 +59,6 @@ public class PromptScript : MonoBehaviour
             // Spawn the prompt
             GameObject newPrompt = Instantiate(promptPrefab, randomPosition, Quaternion.identity);
             spawnedPrompts.Add(newPrompt); // Add the new prompt to the list
-        }
-    }
-
-    private void Update()
-    {
-        // (overridden)
-        // Rotate each spawned prompt to face the camera
-        if (mainCamera == null)
-        {
-            mainCamera = Camera.main.transform;
-        }
-
-        foreach (GameObject prompt in spawnedPrompts)
-        {
-            if (prompt != null)
-            {
-                prompt.transform.LookAt(mainCamera);
-            }
         }
     }
 

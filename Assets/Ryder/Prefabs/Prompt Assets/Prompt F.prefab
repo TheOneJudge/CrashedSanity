@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4427898684215887388}
   - component: {fileID: 287350658241138754}
   - component: {fileID: 1393064494385362902}
+  - component: {fileID: -8827013196843292557}
   m_Layer: 0
   m_Name: Prompt F
   m_TagString: Untagged
@@ -27,13 +28,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3854853724012442674}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -1.3985, y: 1.446374, z: -7.023334}
-  m_LocalScale: {x: 0.78275, y: 0.79142, z: 0.021605875}
+  m_LocalScale: {x: 2, y: 2, z: 0.021605875}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!33 &4427898684215887388
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -99,9 +100,28 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-8827013196843292557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3854853724012442674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc72f07b33aff414bb945f67f35594ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  promptPrefab: {fileID: 3854853724012442674}
+  offset: {x: 0, y: 1, z: 0}
+  radius: 10
+  maxPromptCount: 1
+  floatSpeed: 1
+  floatAmplitude: 0.5
+  rotationSpeed: 1
