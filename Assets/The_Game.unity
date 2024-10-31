@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.09326292, g: 0.054812975, b: 0.023696337, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5857,6 +5857,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 9098168204440803697}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &667745573 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7918255842814045862, guid: 200e959b568b44948ba8d96db79a0156,
+    type: 3}
+  m_PrefabInstance: {fileID: 9098168204440803697}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db82f6d90d9994448aad5ce99be6d287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &690780723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6131,7 +6143,7 @@ PrefabInstance:
     - target: {fileID: 4774749031315558909, guid: 038f574f3991dc44cba97d24a4db7fca,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11331,7 +11343,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &2144028920
 Light:
   m_ObjectHideFlags: 0
@@ -11594,7 +11606,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 667745573}
     - target: {fileID: 326269528734810289, guid: 200e959b568b44948ba8d96db79a0156,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -12274,7 +12286,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 667745573}
     - target: {fileID: 2172499037438702307, guid: 200e959b568b44948ba8d96db79a0156,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
