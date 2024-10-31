@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 4815.772, g: 3119.3481, b: 2329.59, a: 1}
+  m_IndirectSpecularColor: {r: 4808.469, g: 3120.9497, b: 2341.7698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -76917,7 +76917,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4, y: 2.2, z: 0.2986662}
   m_Center: {x: 0, y: 1.1, z: 0.14933296}
---- !u!1001 &2380352790189109387
+--- !u!1001 &4162311878520192596
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -76925,196 +76925,66 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 147056478674508855, guid: a2f7d75272d54e840b795f8307fd8e6f,
-        type: 3}
-      propertyPath: Priority
-      value: 118
-      objectReference: {fileID: 0}
-    - target: {fileID: 147056478674508855, guid: a2f7d75272d54e840b795f8307fd8e6f,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.758
-      objectReference: {fileID: 0}
-    - target: {fileID: 147056478674508855, guid: a2f7d75272d54e840b795f8307fd8e6f,
-        type: 3}
-      propertyPath: DopplerLevel
-      value: 3.76
-      objectReference: {fileID: 0}
-    - target: {fileID: 832398684924381256, guid: a2f7d75272d54e840b795f8307fd8e6f,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.824
-      objectReference: {fileID: 0}
-    - target: {fileID: 832398684924381256, guid: a2f7d75272d54e840b795f8307fd8e6f,
-        type: 3}
-      propertyPath: DopplerLevel
-      value: 4.21
-      objectReference: {fileID: 0}
-    - target: {fileID: 1900703565727010889, guid: a2f7d75272d54e840b795f8307fd8e6f,
-        type: 3}
-      propertyPath: Pan2D
-      value: 0.14
-      objectReference: {fileID: 0}
-    - target: {fileID: 1900703565727010889, guid: a2f7d75272d54e840b795f8307fd8e6f,
-        type: 3}
-      propertyPath: DopplerLevel
-      value: 3.64
-      objectReference: {fileID: 0}
-    - target: {fileID: 3083118849471564055, guid: a2f7d75272d54e840b795f8307fd8e6f,
-        type: 3}
-      propertyPath: m_Name
-      value: BulgarianPhase2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3537763605296592845, guid: a2f7d75272d54e840b795f8307fd8e6f,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.884
-      objectReference: {fileID: 0}
-    - target: {fileID: 3729203688275108720, guid: a2f7d75272d54e840b795f8307fd8e6f,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.776
-      objectReference: {fileID: 0}
-    - target: {fileID: 3729203688275108720, guid: a2f7d75272d54e840b795f8307fd8e6f,
-        type: 3}
-      propertyPath: DopplerLevel
-      value: 4.39
-      objectReference: {fileID: 0}
-    - target: {fileID: 3729203688275108720, guid: a2f7d75272d54e840b795f8307fd8e6f,
-        type: 3}
-      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 0.854
-      objectReference: {fileID: 0}
-    - target: {fileID: 4507353986265972224, guid: a2f7d75272d54e840b795f8307fd8e6f,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.812
-      objectReference: {fileID: 0}
-    - target: {fileID: 4507353986265972224, guid: a2f7d75272d54e840b795f8307fd8e6f,
-        type: 3}
-      propertyPath: DopplerLevel
-      value: 3.91
-      objectReference: {fileID: 0}
-    - target: {fileID: 4519354931994312092, guid: a2f7d75272d54e840b795f8307fd8e6f,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.83
-      objectReference: {fileID: 0}
-    - target: {fileID: 4519354931994312092, guid: a2f7d75272d54e840b795f8307fd8e6f,
-        type: 3}
-      propertyPath: DopplerLevel
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5426344983453638985, guid: a2f7d75272d54e840b795f8307fd8e6f,
+    - target: {fileID: 1933972553569641434, guid: 038f574f3991dc44cba97d24a4db7fca,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 45.949154
       objectReference: {fileID: 0}
-    - target: {fileID: 5426344983453638985, guid: a2f7d75272d54e840b795f8307fd8e6f,
+    - target: {fileID: 1933972553569641434, guid: 038f574f3991dc44cba97d24a4db7fca,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 25.98644
       objectReference: {fileID: 0}
-    - target: {fileID: 5426344983453638985, guid: a2f7d75272d54e840b795f8307fd8e6f,
+    - target: {fileID: 1933972553569641434, guid: 038f574f3991dc44cba97d24a4db7fca,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 65.60716
       objectReference: {fileID: 0}
-    - target: {fileID: 5426344983453638985, guid: a2f7d75272d54e840b795f8307fd8e6f,
+    - target: {fileID: 1933972553569641434, guid: 038f574f3991dc44cba97d24a4db7fca,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5426344983453638985, guid: a2f7d75272d54e840b795f8307fd8e6f,
+    - target: {fileID: 1933972553569641434, guid: 038f574f3991dc44cba97d24a4db7fca,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5426344983453638985, guid: a2f7d75272d54e840b795f8307fd8e6f,
+    - target: {fileID: 1933972553569641434, guid: 038f574f3991dc44cba97d24a4db7fca,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5426344983453638985, guid: a2f7d75272d54e840b795f8307fd8e6f,
+    - target: {fileID: 1933972553569641434, guid: 038f574f3991dc44cba97d24a4db7fca,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5426344983453638985, guid: a2f7d75272d54e840b795f8307fd8e6f,
+    - target: {fileID: 1933972553569641434, guid: 038f574f3991dc44cba97d24a4db7fca,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5426344983453638985, guid: a2f7d75272d54e840b795f8307fd8e6f,
+    - target: {fileID: 1933972553569641434, guid: 038f574f3991dc44cba97d24a4db7fca,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5426344983453638985, guid: a2f7d75272d54e840b795f8307fd8e6f,
+    - target: {fileID: 1933972553569641434, guid: 038f574f3991dc44cba97d24a4db7fca,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5600193186611363535, guid: a2f7d75272d54e840b795f8307fd8e6f,
+    - target: {fileID: 4774749031315558909, guid: 038f574f3991dc44cba97d24a4db7fca,
         type: 3}
-      propertyPath: m_Volume
-      value: 0.71
-      objectReference: {fileID: 0}
-    - target: {fileID: 5804082587246169303, guid: a2f7d75272d54e840b795f8307fd8e6f,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.733
-      objectReference: {fileID: 0}
-    - target: {fileID: 5804082587246169303, guid: a2f7d75272d54e840b795f8307fd8e6f,
-        type: 3}
-      propertyPath: DopplerLevel
-      value: 3.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 6473583108796206557, guid: a2f7d75272d54e840b795f8307fd8e6f,
-        type: 3}
-      propertyPath: Priority
-      value: 123
-      objectReference: {fileID: 0}
-    - target: {fileID: 6473583108796206557, guid: a2f7d75272d54e840b795f8307fd8e6f,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.655
-      objectReference: {fileID: 0}
-    - target: {fileID: 6473583108796206557, guid: a2f7d75272d54e840b795f8307fd8e6f,
-        type: 3}
-      propertyPath: DopplerLevel
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8060990151140877199, guid: a2f7d75272d54e840b795f8307fd8e6f,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.697
-      objectReference: {fileID: 0}
-    - target: {fileID: 8060990151140877199, guid: a2f7d75272d54e840b795f8307fd8e6f,
-        type: 3}
-      propertyPath: DopplerLevel
-      value: 3.67
-      objectReference: {fileID: 0}
-    - target: {fileID: 8480127628036525571, guid: a2f7d75272d54e840b795f8307fd8e6f,
-        type: 3}
-      propertyPath: Priority
-      value: 114
-      objectReference: {fileID: 0}
-    - target: {fileID: 8480127628036525571, guid: a2f7d75272d54e840b795f8307fd8e6f,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.703
-      objectReference: {fileID: 0}
-    - target: {fileID: 8480127628036525571, guid: a2f7d75272d54e840b795f8307fd8e6f,
-        type: 3}
-      propertyPath: DopplerLevel
-      value: 4.03
+      propertyPath: m_Name
+      value: BulgarianSoundFix
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a2f7d75272d54e840b795f8307fd8e6f, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 038f574f3991dc44cba97d24a4db7fca, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -77127,4 +76997,4 @@ SceneRoots:
   - {fileID: 547253148}
   - {fileID: 996023860}
   - {fileID: 2037360341}
-  - {fileID: 2380352790189109387}
+  - {fileID: 4162311878520192596}
