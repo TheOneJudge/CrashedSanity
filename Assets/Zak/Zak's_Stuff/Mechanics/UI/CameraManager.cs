@@ -20,6 +20,7 @@ public class CameraManager : MonoBehaviour
     {
         if (cameraIndex >= 0 && cameraIndex < cameras.Length)
         {
+            Time.timeScale = 1;
             cameras[currentCameraIndex].gameObject.SetActive(false); // Disable current camera
             cameras[cameraIndex].gameObject.SetActive(true); // Enable the new camera
             currentCameraIndex = cameraIndex; // Update the current camera index
