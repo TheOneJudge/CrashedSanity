@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.11723091, g: 0.06344361, b: 0.025403861, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10767,7 +10767,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &2144028920
 Light:
   m_ObjectHideFlags: 0
@@ -11295,6 +11295,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 2196606233042654800, guid: 200e959b568b44948ba8d96db79a0156,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2217813097482277050, guid: 200e959b568b44948ba8d96db79a0156,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -11719,6 +11724,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Shadows.m_Type
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7423128166925739360, guid: 200e959b568b44948ba8d96db79a0156,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7522347121772228477, guid: 200e959b568b44948ba8d96db79a0156,
         type: 3}

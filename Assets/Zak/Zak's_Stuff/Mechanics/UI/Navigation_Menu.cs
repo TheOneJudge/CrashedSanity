@@ -33,7 +33,6 @@ public class Navigation_Menu : MonoBehaviour
     public void Resume()
     {
         navigationPanel.SetActive(false);
-        Time.timeScale = 1f;
         isTabMenuOpen = false;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -44,7 +43,6 @@ public class Navigation_Menu : MonoBehaviour
     {
         navigationPanel.SetActive(true);
         optionsBar.SetActive(true);  // Activate the options bar
-        Time.timeScale = 0f;  // Pause the game
         isTabMenuOpen = true;
 
         // Enable and unlock the cursor
@@ -57,7 +55,6 @@ public class Navigation_Menu : MonoBehaviour
     {
         navigationPanel.SetActive(false);
         optionsBar.SetActive(false);  // Deactivate the options bar
-        Time.timeScale = 1f;  // Resume the game
         isTabMenuOpen = false;
 
         // Lock and hide the cursor again
