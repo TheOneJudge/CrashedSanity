@@ -13,7 +13,8 @@ public class DiageticUiScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Cursor.lockState = CursorLockMode.Locked;
+
     }
 
     // Update is called once per frame
@@ -23,6 +24,10 @@ public class DiageticUiScript : MonoBehaviour
         {
             active = true;
             OnDUIDisplay(active);
+        }
+        else if(Input.GetKeyUp(KeyCode.Tab) && active)
+        {
+            active = false;
         }
         
         canvas.transform.position = point.transform.position;
