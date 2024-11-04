@@ -9,7 +9,7 @@ public class DiageticUiScript : MonoBehaviour
     public Texture2D cursorTex;
 
 
-    [SerializeField] private Animator anim;
+    [SerializeField] private Animator anim, playerAnim;
 
     private bool active = false;
     
@@ -55,6 +55,7 @@ public class DiageticUiScript : MonoBehaviour
             canvas.SetActive(active);
             //dCanvas.SetActive(active);
 
+            playerAnim.SetBool("onDisplay", true);
             anim.SetBool("onDisplay", true);
             
             //cam.transform.LookAt(point.transform.position);
@@ -63,6 +64,8 @@ public class DiageticUiScript : MonoBehaviour
         }
         else
         {
+            playerAnim.SetBool("onDisplay", false);
+
             anim.SetBool("onDisplay", false);
 
             dCanvas.SetActive(active);
