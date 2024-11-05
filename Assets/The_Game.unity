@@ -5480,6 +5480,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1884154598}
     m_Modifications:
+    - target: {fileID: 2108267700223277007, guid: ca611a5b34f1cb04ba6334303951be1c,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.5882353
+      objectReference: {fileID: 0}
     - target: {fileID: 2768107591053849506, guid: ca611a5b34f1cb04ba6334303951be1c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5539,6 +5544,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DUI Asset
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282855887251524980, guid: ca611a5b34f1cb04ba6334303951be1c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8049023755970372594, guid: ca611a5b34f1cb04ba6334303951be1c,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.5882353
       objectReference: {fileID: 0}
     - target: {fileID: 8836783363178200563, guid: ca611a5b34f1cb04ba6334303951be1c,
         type: 3}
