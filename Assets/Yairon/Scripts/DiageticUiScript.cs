@@ -61,6 +61,7 @@ public class DiageticUiScript : MonoBehaviour
             //cam.transform.LookAt(point.transform.position);
 
             Cursor.lockState = CursorLockMode.None;
+
         }
         else
         {
@@ -73,6 +74,7 @@ public class DiageticUiScript : MonoBehaviour
 
 
             Cursor.lockState = CursorLockMode.Locked;
+
         }
 
         Cursor.visible = active;

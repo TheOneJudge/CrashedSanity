@@ -5530,6 +5530,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4529877585267897939, guid: ca611a5b34f1cb04ba6334303951be1c,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 5421351378895274704, guid: ca611a5b34f1cb04ba6334303951be1c,
         type: 3}
       propertyPath: m_Name
@@ -12378,6 +12383,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 1805126481700615428, guid: 200e959b568b44948ba8d96db79a0156,
+        type: 3}
+      propertyPath: m_TagString
+      value: MainCamera
+      objectReference: {fileID: 0}
     - target: {fileID: 1870520312115196800, guid: 200e959b568b44948ba8d96db79a0156,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -12990,8 +13000,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3383089697508604581, guid: 200e959b568b44948ba8d96db79a0156,
         type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 2145712214}
+    - target: {fileID: 3383089697508604581, guid: 200e959b568b44948ba8d96db79a0156,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3383089697508604581, guid: 200e959b568b44948ba8d96db79a0156,
+        type: 3}
       propertyPath: m_TargetDisplay
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3403859418366800895, guid: 200e959b568b44948ba8d96db79a0156,
         type: 3}
@@ -13870,7 +13890,7 @@ PrefabInstance:
     - target: {fileID: 6827755255623358538, guid: 200e959b568b44948ba8d96db79a0156,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6829409183709117897, guid: 200e959b568b44948ba8d96db79a0156,
         type: 3}
@@ -13946,6 +13966,22 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Shadows.m_Type
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7332404155716188684, guid: 200e959b568b44948ba8d96db79a0156,
+        type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7332404155716188684, guid: 200e959b568b44948ba8d96db79a0156,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f1f39b3dd7fd64d4880fc079e4c486ed,
+        type: 3}
+    - target: {fileID: 7332404155716188684, guid: 200e959b568b44948ba8d96db79a0156,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7334174754427355957, guid: 200e959b568b44948ba8d96db79a0156,
         type: 3}
