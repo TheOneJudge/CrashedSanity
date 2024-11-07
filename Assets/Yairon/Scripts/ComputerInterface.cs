@@ -1,11 +1,13 @@
+using System.Threading;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class ComputerInterface : MonoBehaviour
 {
     public UnityEvent myEvent;
 
-    [SerializeField] private GameObject pressEPanel, menu, offlinePanel;
+    [SerializeField] private GameObject pressEPanel, offlinePanel, menuPanel;
     [SerializeField] private GameObject cam;
 
     [SerializeField] private Generator gen;
@@ -14,10 +16,21 @@ public class ComputerInterface : MonoBehaviour
     private bool ePress = false;
 
 
+    [Header("Password")]
+
+    [SerializeField] private GameObject passwordPanel, error;
+
+    [SerializeField] private string password;
+
+    [SerializeField] private InputField passwordInput;
+
+
     private void Start()
     {
         pressEPanel.SetActive(false);
-        menu.SetActive(false);
+        menuPanel.SetActive(false);
+        passwordPanel.SetActive(false);
+        offlinePanel.SetActive(false);
     }
 
 
@@ -32,7 +45,7 @@ public class ComputerInterface : MonoBehaviour
             if (Input.GetKeyUp(KeyCode.E))
             {
                 ePress = true;
-                ShowMenu(ePress);
+                EnterPassword();
             }       
         }
         else if(triggered && !gen.IsPowered())
@@ -62,7 +75,7 @@ public class ComputerInterface : MonoBehaviour
         {
             triggered = false;
             ShowE(triggered, gen.IsPowered());
-            ShowMenu(triggered);
+            //ShowMenu();
             Debug.Log("player exit");
         }
     }
@@ -86,27 +99,62 @@ public class ComputerInterface : MonoBehaviour
         //ePress = triggered;
     }
 
-    private void ShowOffline(bool online)
+    private void EnterPassword()
     {
-
+        passwordInput.text = "";
+        passwordInput.interactable = true;
+        passwordPanel.SetActive(true);
+        pressEPanel.SetActive(false);
+        menuPanel.SetActive(false);
     }
 
-    private void ShowMenu(bool ePress)
+    private void ShowMenu()
     {
 
-        if (ePress)
+        ShowE(false, false);
+        menuPanel.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+
+        passwordInput.interactable = false;
+        passwordPanel.SetActive(false);
+
+
+        /*if (ePress)
         {
             ShowE(false, false);
-            menu.SetActive(ePress);
+            menuPanel.SetActive(ePress);
 
             Cursor.lockState = CursorLockMode.None;
         }
         else
         {
-            menu.SetActive(false);
+            menuPanel.SetActive(false);
             Cursor.lockState= CursorLockMode.Locked;
-        }
+        }*/
 
-        Cursor.visible = ePress;
+        //Cursor.visible = ePress;
     }
+
+    [SerializeField] public void PassCheck()
+    {
+        if (passwordInput.text == password)
+        {
+            ShowMenu();
+        }
+        else
+        {
+            error.SetActive(true);
+            
+            Debug.Log("Incorrect Password");
+
+            float timer = 0;
+            timer += Time.deltaTime;
+            if(timer >= 2f)
+            {
+                timer = 0;
+                error.SetActive(false);
+            }
+        }
+    }
+
 }
