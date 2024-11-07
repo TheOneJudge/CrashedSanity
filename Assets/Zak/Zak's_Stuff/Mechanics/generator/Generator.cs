@@ -12,6 +12,8 @@ public class Generator : MonoBehaviour
 
     public AudioSource generatorOn;
 
+    [SerializeField] private GameObject light;
+
 
     public bool IsPowered()
     {
@@ -20,7 +22,8 @@ public class Generator : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;     
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        light.SetActive(false);
     }
 
     void Update()
@@ -45,10 +48,12 @@ public class Generator : MonoBehaviour
         if(isOn)
         {
             generatorOn.enabled = true;
+            light.SetActive(true);
         }
         else if(!isOn)
         {
             generatorOn.enabled = false;
+            light.SetActive(false);
         }
         
         Debug.Log($"{gameObject.name} generator is now " + (isOn ? "ON" : "OFF")); 
