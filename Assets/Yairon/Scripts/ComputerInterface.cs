@@ -4,9 +4,11 @@ using UnityEngine.Events;
 public class ComputerInterface : MonoBehaviour
 {
     public UnityEvent myEvent;
-    
-    [SerializeField] private GameObject canvas, menu;
+
+    [SerializeField] private GameObject pressEPanel, menu, offlinePanel;
     [SerializeField] private GameObject cam;
+
+    [SerializeField] private Generator gen;
 
     private bool triggered = false;
     private bool ePress = false;
@@ -14,21 +16,28 @@ public class ComputerInterface : MonoBehaviour
 
     private void Start()
     {
-        canvas.SetActive(false);
+        pressEPanel.SetActive(false);
         menu.SetActive(false);
     }
 
 
     private void Update()
     {
-        canvas.transform.localRotation = cam.transform.localRotation;
+        pressEPanel.transform.localRotation = cam.transform.localRotation;
 
-        Debug.Log(cam.transform.localRotation);
+        //Debug.Log(cam.transform.localRotation);
 
-        if (triggered && Input.GetKeyUp(KeyCode.E))
+        if (triggered && gen.IsPowered())
         {
-            ePress = true;
-            ShowMenu(ePress);
+            if (Input.GetKeyUp(KeyCode.E))
+            {
+                ePress = true;
+                ShowMenu(ePress);
+            }       
+        }
+        else if(triggered && !gen.IsPowered())
+        {
+
         }
         
 
@@ -39,8 +48,8 @@ public class ComputerInterface : MonoBehaviour
         {
             
             triggered = true;
-            ShowE(triggered);
-            Debug.Log("player enter");
+            ShowE(triggered, gen.IsPowered());
+            Debug.Log("gen: " + gen.IsPowered());
 
             
         }
@@ -52,23 +61,34 @@ public class ComputerInterface : MonoBehaviour
         if (other.tag == "Player")
         {
             triggered = false;
-            ShowE(triggered);
+            ShowE(triggered, gen.IsPowered());
             ShowMenu(triggered);
             Debug.Log("player exit");
         }
     }
-    private void ShowE(bool triggered)
+    private void ShowE(bool triggered, bool online)
     {
-        if (triggered)
+        if (triggered && online)
         {
-            canvas.SetActive(triggered);
+            pressEPanel.SetActive(triggered);
         }
-        else
+        else if(triggered && !online)
         {
-            canvas.SetActive(triggered);
+            offlinePanel.SetActive(triggered);
         }
 
+        if (!triggered)
+        {
+            offlinePanel.SetActive(triggered);
+            pressEPanel.SetActive(triggered);
+
+        }
         //ePress = triggered;
+    }
+
+    private void ShowOffline(bool online)
+    {
+
     }
 
     private void ShowMenu(bool ePress)
@@ -76,7 +96,7 @@ public class ComputerInterface : MonoBehaviour
 
         if (ePress)
         {
-            ShowE(false);
+            ShowE(false, false);
             menu.SetActive(ePress);
 
             Cursor.lockState = CursorLockMode.None;
