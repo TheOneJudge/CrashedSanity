@@ -30,7 +30,6 @@ Material:
   - TransparentDepthPostpass
   - TransparentBackface
   - RayTracingPrepass
-  - MOTIONVECTORS
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
@@ -85,7 +84,7 @@ Material:
     - _EnableBlendModePreserveSpecularLighting: 1
     - _EnableFogOnTransparent: 1
     - _ExcludeFromTUAndAA: 0
-    - _Glossiness: 0.5
+    - _Glossiness: 0.722
     - _HueVariationKwToggle: 1
     - _NormalMapKwToggle: 1
     - _OpaqueCullMode: 2
