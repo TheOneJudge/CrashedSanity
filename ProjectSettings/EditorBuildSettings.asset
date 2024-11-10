@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Zak/Zak's_Stuff/Mechanics/Scene/MainMenu.unity
     guid: 76862d15bcb69054cb074fdb5e21ee1b
   - enabled: 1
-    path: Assets/The_Game.unity
+    path: Assets/The_Game Original.unity
     guid: 2ca12adc3f15ef3489c29237e6f6e3e2
   m_configObjects: {}
