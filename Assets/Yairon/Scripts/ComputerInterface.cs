@@ -8,7 +8,7 @@ public class ComputerInterface : MonoBehaviour
     public UnityEvent myEvent;
 
     [SerializeField] private GameObject pressEPanel, offlinePanel, menuPanel;
-    [SerializeField] private GameObject cam;
+    [SerializeField] private GameObject sanityBarCanvas;
 
     [SerializeField] private Generator gen;
 
@@ -36,7 +36,7 @@ public class ComputerInterface : MonoBehaviour
 
     private void Update()
     {
-        pressEPanel.transform.localRotation = cam.transform.localRotation;
+        //pressEPanel.transform.localRotation = cam.transform.localRotation;
 
         //Debug.Log(cam.transform.localRotation);
 
@@ -45,6 +45,7 @@ public class ComputerInterface : MonoBehaviour
             if (Input.GetKeyUp(KeyCode.E))
             {
                 ePress = true;
+                sanityBarCanvas.SetActive(false );
                 EnterPassword();
             }       
         }
@@ -77,6 +78,9 @@ public class ComputerInterface : MonoBehaviour
             ShowE(triggered, gen.IsPowered());
             //ShowMenu();
             Debug.Log("player exit");
+
+            sanityBarCanvas.SetActive(true);
+
         }
     }
     private void ShowE(bool triggered, bool online)
