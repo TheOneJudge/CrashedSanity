@@ -72,7 +72,6 @@ public class Computer : MonoBehaviour
         computerUIPanel.SetActive(true);
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
-        Time.timeScale = 0f;
 
         // Call AccessComputer() to reset the password panel
         AccessComputer();
@@ -91,7 +90,6 @@ public class Computer : MonoBehaviour
         computerUIPanel.SetActive(false);
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-        Time.timeScale = 1f;
     }
 
     public void AccessComputer()
