@@ -6045,6 +6045,16 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 1.85
       objectReference: {fileID: 0}
+    - target: {fileID: 8207850649711947014, guid: cec5729fd801d1c4d85b59f81b57a793,
+        type: 3}
+      propertyPath: gen
+      value: 
+      objectReference: {fileID: 690780729}
+    - target: {fileID: 8207850649711947014, guid: cec5729fd801d1c4d85b59f81b57a793,
+        type: 3}
+      propertyPath: sanityBarCanvas
+      value: 
+      objectReference: {fileID: 455389030}
     - target: {fileID: 8481041672045219242, guid: cec5729fd801d1c4d85b59f81b57a793,
         type: 3}
       propertyPath: m_LocalScale.x
