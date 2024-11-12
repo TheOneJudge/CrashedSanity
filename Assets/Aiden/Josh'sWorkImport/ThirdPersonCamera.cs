@@ -17,6 +17,8 @@ public class ThirdPersonCamera : MonoBehaviour
     private float currentY = 0f;      // Current Y rotation (vertical)
     private Vector3 currentVelocity;  // Used for smoothing the camera movement
 
+    private bool active = false;
+
     void Start()
     {
         // Lock the cursor to the screen and make it invisible
@@ -26,27 +28,50 @@ public class ThirdPersonCamera : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Get mouse movement for rotating the camera
-        currentX += Input.GetAxis("Mouse X") * sensitivityX;
-        currentY -= Input.GetAxis("Mouse Y") * sensitivityY;
+        
+            // Get mouse movement for rotating the camera
+            currentX += Input.GetAxis("Mouse X") * sensitivityX;
+            currentY -= Input.GetAxis("Mouse Y") * sensitivityY;
 
-        // Clamp the Y rotation between minY and maxY to prevent over-rotation
-        currentY = Mathf.Clamp(currentY, minY, maxY);
+            // Clamp the Y rotation between minY and maxY to prevent over-rotation
+            currentY = Mathf.Clamp(currentY, minY, maxY);
 
-        // Zoom in and out using the scroll wheel
-        distance -= Input.GetAxis("Mouse ScrollWheel") * zoomSpeed;
-        distance = Mathf.Clamp(distance, minDistance, maxDistance);  // Clamp the zoom distance
+            // Zoom in and out using the scroll wheel
+            distance -= Input.GetAxis("Mouse ScrollWheel") * zoomSpeed;
+            distance = Mathf.Clamp(distance, minDistance, maxDistance);  // Clamp the zoom distance
 
-        // Calculate the camera rotation around the target (player)
-        Quaternion rotation = Quaternion.Euler(currentY, currentX, 0);
+            // Calculate the camera rotation around the target (player)
+            Quaternion rotation = Quaternion.Euler(currentY, currentX, 0);
 
-        // Calculate the desired camera position based on the zoom distance
-        Vector3 desiredPosition = target.position - (rotation * Vector3.forward * distance);
+            // Calculate the desired camera position based on the zoom distance
+            Vector3 desiredPosition = target.position - (rotation * Vector3.forward * distance);
 
-        // Smoothly move the camera to the desired position
-        transform.position = Vector3.SmoothDamp(transform.position, desiredPosition, ref currentVelocity, smoothTime);
+            // Smoothly move the camera to the desired position
+            transform.position = Vector3.SmoothDamp(transform.position, desiredPosition, ref currentVelocity, smoothTime);
 
-        // Always look at the target (player)
-        transform.LookAt(target.position);
+            // Always look at the target (player)
+            transform.LookAt(target.position);
+        
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.Tab) && !active)
+        {
+            float timer = 0;
+            timer += Time.deltaTime;
+            if(timer > 1)
+            {
+                timer = 0;
+                Debug.Log("time");
+
+            }
+            active = true;
+
+        }
+        else if (Input.GetKeyUp(KeyCode.Tab) && active)
+        {
+            active = false;
+        }
     }
 }

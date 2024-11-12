@@ -2229,7 +2229,7 @@ PrefabInstance:
         type: 3}
       propertyPath: cam
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2076454025}
     - target: {fileID: 8836783363178200563, guid: ca611a5b34f1cb04ba6334303951be1c,
         type: 3}
       propertyPath: playerAnim
@@ -17211,7 +17211,9 @@ PrefabInstance:
       propertyPath: m_WarningMessage
       value: "\nBinding warning: Some generic clip(s) animate transforms that are
         already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'upper_arm.R'\n\tFrom animation clip 'idleUI'"
+        by Humanoid clips.\n\tTransform 'forearm.R'\n\tTransform 'upper_arm.R'\n\tTransform
+        'forearm.R'\n\tTransform 'upper_arm.R'\n\tTransform 'forearm.R'\n\tTransform
+        'upper_arm.R'\n\tFrom animation clip 'idleUI'"
       objectReference: {fileID: 0}
     - target: {fileID: 6349407196660142151, guid: 200e959b568b44948ba8d96db79a0156,
         type: 3}

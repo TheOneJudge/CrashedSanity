@@ -4,7 +4,7 @@ using UnityEngine;
 public class DiageticUiScript : MonoBehaviour
 {
     [SerializeField] private GameObject canvas, dCanvas, point;
-    [SerializeField] private Camera cam;
+    [SerializeField] private GameObject cam;
 
     public Texture2D cursorTex;
 
@@ -43,7 +43,7 @@ public class DiageticUiScript : MonoBehaviour
         
 
         //canvas.transform.position = point.transform.position;
-        //canvas.transform.localRotation = cam.transform.localRotation;
+        canvas.transform.localRotation = cam.transform.localRotation;
     }
 
     private void OnDUIDisplay(bool active)
