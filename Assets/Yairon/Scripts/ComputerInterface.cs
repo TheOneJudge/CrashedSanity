@@ -110,6 +110,9 @@ public class ComputerInterface : MonoBehaviour
         passwordPanel.SetActive(true);
         pressEPanel.SetActive(false);
         menuPanel.SetActive(false);
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     private void ShowMenu()
