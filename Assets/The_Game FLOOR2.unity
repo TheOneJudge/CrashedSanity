@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.17980959, g: 0.17980959, b: 0.17980959, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10848,6 +10848,77 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.9999998, y: 2.2, z: 0.29866645}
   m_Center: {x: 0, y: 1.1, z: 0.14933307}
+--- !u!1 &1609892504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1609892507}
+  - component: {fileID: 1609892506}
+  - component: {fileID: 1609892505}
+  m_Layer: 0
+  m_Name: RyderPrompts (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!135 &1609892505
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609892504}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 13.3
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1609892506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609892504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c27ca37c8e5b6a4bb9a8f9a0eae33aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  promptPrefab: {fileID: 685744106652845006, guid: 94d47dfa3e4f05a4b8651ec9cf100033,
+    type: 3}
+  offset: {x: 0, y: 0, z: 0}
+  radius: 10
+  maxPromptCount: 1
+--- !u!4 &1609892507
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609892504}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 60.82, y: 27.25, z: -90.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1649235619
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11084,6 +11155,77 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.9999998, y: 2.1999998, z: 0.2986662}
   m_Center: {x: 0, y: 1.0999999, z: 0.14933296}
+--- !u!1 &1681949876
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1681949879}
+  - component: {fileID: 1681949878}
+  - component: {fileID: 1681949877}
+  m_Layer: 0
+  m_Name: RyderPrompts
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!135 &1681949877
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681949876}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 13.3
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1681949878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681949876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c27ca37c8e5b6a4bb9a8f9a0eae33aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  promptPrefab: {fileID: 685744106652845006, guid: 94d47dfa3e4f05a4b8651ec9cf100033,
+    type: 3}
+  offset: {x: 0, y: 0, z: 0}
+  radius: 10
+  maxPromptCount: 1
+--- !u!4 &1681949879
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681949876}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 95.86, y: 27.25, z: 125.27}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1686342209
 GameObject:
   m_ObjectHideFlags: 0
@@ -16820,3 +16962,5 @@ SceneRoots:
   - {fileID: 1265423910}
   - {fileID: 417024495}
   - {fileID: 2083444056}
+  - {fileID: 1681949879}
+  - {fileID: 1609892507}

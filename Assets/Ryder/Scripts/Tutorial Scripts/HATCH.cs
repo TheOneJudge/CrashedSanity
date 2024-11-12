@@ -9,12 +9,10 @@ public class HATCH : MonoBehaviour
     // Trigger collision detection with the player
     void OnTriggerEnter(Collider other)
     {
-        
         if (other.CompareTag(playerTag))
         {
-            
             Destroy(gameObject);  
         }
     }
 
-    
+} 
