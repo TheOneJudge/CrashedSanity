@@ -7,7 +7,7 @@ public class ComputerInterface : MonoBehaviour
 {
     public UnityEvent myEvent;
 
-    [SerializeField] private GameObject pressEPanel, offlinePanel, menuPanel;
+    [SerializeField] private GameObject canvas, pressEPanel, offlinePanel, menuPanel;
     [SerializeField] private GameObject sanityBarCanvas;
 
     [SerializeField] private Generator gen;
@@ -65,7 +65,7 @@ public class ComputerInterface : MonoBehaviour
             ShowE(triggered, gen.IsPowered());
             Debug.Log("gen: " + gen.IsPowered());
 
-            
+            canvas.SetActive(true);
         }
     }
 
@@ -80,6 +80,7 @@ public class ComputerInterface : MonoBehaviour
             Debug.Log("player exit");
 
             sanityBarCanvas.SetActive(true);
+            ShowMenu(false);
 
         }
     }
@@ -115,15 +116,27 @@ public class ComputerInterface : MonoBehaviour
         Cursor.visible = true;
     }
 
-    private void ShowMenu()
+    private void ShowMenu(bool correct)
     {
 
-        ShowE(false, false);
-        menuPanel.SetActive(true);
-        Cursor.lockState = CursorLockMode.None;
+        if (correct)
+        {
+            //ShowE(false, false);
+            menuPanel.SetActive(correct);
+            Cursor.lockState = CursorLockMode.None;
 
-        passwordInput.interactable = false;
-        passwordPanel.SetActive(false);
+            passwordInput.interactable = false;
+            passwordPanel.SetActive(false);
+        }
+
+        else
+        {
+            menuPanel.SetActive(false);
+            Cursor.lockState = CursorLockMode.Locked;
+
+        }
+        
+        
 
 
         /*if (ePress)
@@ -146,7 +159,7 @@ public class ComputerInterface : MonoBehaviour
     {
         if (passwordInput.text == password)
         {
-            ShowMenu();
+            ShowMenu(true);
         }
         else
         {
