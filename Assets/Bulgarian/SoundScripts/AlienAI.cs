@@ -9,6 +9,7 @@ public class AlienAI : MonoBehaviour
     public float fleeSpeed = 3f;
     public float attackSpeed = 5f;
     public float detectionRange = 10f;
+    public float playerSanity;
     private int currentWaypoint = 0;
     private bool isAttacking = false;
     public LayerMask obstructionLayer; // Layer for obstacles like walls
@@ -68,7 +69,11 @@ public class AlienAI : MonoBehaviour
 
     void ChasePlayer()
     {
-        MoveTowards(player.position, attackSpeed);
+        if (playerSanity <= 20f)
+        {
+            MoveTowards(player.position, attackSpeed);
+        }
+        //MoveTowards(player.position, attackSpeed);
 
         // Stop patrol sounds and play chase sound
         if (patrolSoundCoroutine != null)
