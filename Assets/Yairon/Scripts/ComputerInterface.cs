@@ -81,6 +81,7 @@ public class ComputerInterface : MonoBehaviour
 
             sanityBarCanvas.SetActive(true);
             ShowMenu(false);
+            passwordPanel.SetActive(false);
 
         }
     }
@@ -153,6 +154,11 @@ public class ComputerInterface : MonoBehaviour
         }*/
 
         //Cursor.visible = ePress;
+    }
+
+    private void CloseMenu()
+    {
+
     }
 
     [SerializeField] public void PassCheck()
