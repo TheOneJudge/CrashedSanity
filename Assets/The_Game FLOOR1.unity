@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.17980959, g: 0.17980959, b: 0.17980959, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -17156,9 +17156,7 @@ PrefabInstance:
       propertyPath: m_WarningMessage
       value: "\nBinding warning: Some generic clip(s) animate transforms that are
         already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'forearm.R'\n\tTransform 'upper_arm.R'\n\tTransform
-        'forearm.R'\n\tTransform 'upper_arm.R'\n\tTransform 'forearm.R'\n\tTransform
-        'upper_arm.R'\n\tFrom animation clip 'idleUI'"
+        by Humanoid clips.\n\tTransform 'upper_arm.R'\n\tFrom animation clip 'idleUI'"
       objectReference: {fileID: 0}
     - target: {fileID: 6349407196660142151, guid: 200e959b568b44948ba8d96db79a0156,
         type: 3}

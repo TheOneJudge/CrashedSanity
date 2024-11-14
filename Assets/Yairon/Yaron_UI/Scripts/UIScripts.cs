@@ -7,17 +7,16 @@ public class UIScripts : MonoBehaviour
 
     public static bool gameIsPaused = false;
     public GameObject pauseMenuUI;
-    public Navigation_Menu tabMenuScript;  // Reference to the Navigation Menu script
 
     private void Start()
     {
-        Cursor.visible = false;
+        //Cursor.visible = false;
     }
 
     private void Update()
     {
-        // Escape key press to toggle the pause menu, only if the Tab menu is not open
-        if (Input.GetKeyUp(KeyCode.Escape) && !tabMenuScript.isTabMenuOpen)
+
+        if (Input.GetKeyUp(KeyCode.Escape))
         {
             if (gameIsPaused)
             {
@@ -39,7 +38,7 @@ public class UIScripts : MonoBehaviour
         Cursor.visible = false;
     }
 
-    void Pause()
+    public void Pause()
     {
         Cursor.lockState = CursorLockMode.None;
         pauseMenuUI.SetActive(true);

@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class DiageticUiScript : MonoBehaviour
 {
-    [SerializeField] private GameObject canvas, dCanvas, point;
+    [SerializeField] private GameObject canvas, dCanvas, point, infoPanel;
     [SerializeField] private GameObject cam;
 
     public Texture2D cursorTex;
@@ -16,6 +16,9 @@ public class DiageticUiScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Cursor.visible = false;
+
+
         anim = GetComponent<Animator>();
         
         Cursor.SetCursor(cursorTex, Vector2.zero, CursorMode.Auto);
@@ -80,6 +83,12 @@ public class DiageticUiScript : MonoBehaviour
         Cursor.visible = active;
 
 
+    }
+
+    public void OnDUIPanel()
+    {
+        anim.SetBool("openPanel", true);
+        Debug.Log("panel open");
     }
 
 }
