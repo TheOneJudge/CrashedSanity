@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: DUIOpen
+  m_Name: DUIPanelOpen
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -22,8 +22,17 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
+        time: 0
+        value: 312.99997
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
         time: 0.5
-        value: -633
+        value: 46.89
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -34,7 +43,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.x
-    path: Canvas/BG
+    path: Canvas/ControlsPanel
     classID: 224
     script: {fileID: 0}
     flags: 0
@@ -43,8 +52,17 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
+        time: 0
+        value: -1120
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
         time: 0.5
-        value: -1118
+        value: -1652.21
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -54,8 +72,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_AnchoredPosition.x
-    path: Canvas/Scroll View/Scrollbar
+    attribute: m_SizeDelta.x
+    path: Canvas/ControlsPanel
     classID: 224
     script: {fileID: 0}
     flags: 0
@@ -64,8 +82,17 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
+        time: 0
+        value: -456.00003
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
         time: 0.5
-        value: 649
+        value: -456
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -75,8 +102,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_AnchoredPosition.x
-    path: Canvas/Scroll View/Panel
+    attribute: m_SizeDelta.y
+    path: Canvas/ControlsPanel
     classID: 224
     script: {fileID: 0}
     flags: 0
@@ -89,7 +116,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 3751541707
+      path: 461713942
       attribute: 1460864421
       script: {fileID: 0}
       typeID: 224
@@ -98,8 +125,8 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 4007831657
-      attribute: 1460864421
+      path: 461713942
+      attribute: 1967290853
       script: {fileID: 0}
       typeID: 224
       customType: 28
@@ -107,8 +134,8 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3366853316
-      attribute: 1460864421
+      path: 461713942
+      attribute: 38095219
       script: {fileID: 0}
       typeID: 224
       customType: 28
@@ -142,8 +169,17 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
+        time: 0
+        value: 312.99997
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
         time: 0.5
-        value: -633
+        value: 46.89
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -154,7 +190,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.x
-    path: Canvas/BG
+    path: Canvas/ControlsPanel
     classID: 224
     script: {fileID: 0}
     flags: 0
@@ -163,8 +199,17 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
+        time: 0
+        value: -1120
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
         time: 0.5
-        value: -1118
+        value: -1652.21
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -174,8 +219,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_AnchoredPosition.x
-    path: Canvas/Scroll View/Scrollbar
+    attribute: m_SizeDelta.x
+    path: Canvas/ControlsPanel
     classID: 224
     script: {fileID: 0}
     flags: 0
@@ -184,8 +229,17 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
+        time: 0
+        value: -456.00003
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
         time: 0.5
-        value: 649
+        value: -456
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -195,8 +249,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_AnchoredPosition.x
-    path: Canvas/Scroll View/Panel
+    attribute: m_SizeDelta.y
+    path: Canvas/ControlsPanel
     classID: 224
     script: {fileID: 0}
     flags: 0

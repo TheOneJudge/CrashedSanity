@@ -24,9 +24,9 @@ public class ComputerInterface : MonoBehaviour
 
     [SerializeField] private InputField passwordInput;
 
-
     private void Start()
     {
+
         pressEPanel.SetActive(false);
         menuPanel.SetActive(false);
         passwordPanel.SetActive(false);
