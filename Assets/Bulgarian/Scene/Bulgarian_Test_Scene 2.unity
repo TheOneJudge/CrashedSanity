@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 4808.469, g: 3120.9497, b: 2341.7698, a: 1}
+  m_IndirectSpecularColor: {r: 4813.7544, g: 3118.0337, b: 2328.844, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -76985,6 +76985,74 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 038f574f3991dc44cba97d24a4db7fca, type: 3}
+--- !u!1001 &4320827354984231411
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3643051925245339751, guid: 0aaa0671f4617b140bec0ecc5fe77a4e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.6006644
+      objectReference: {fileID: 0}
+    - target: {fileID: 3643051925245339751, guid: 0aaa0671f4617b140bec0ecc5fe77a4e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.0015302
+      objectReference: {fileID: 0}
+    - target: {fileID: 3643051925245339751, guid: 0aaa0671f4617b140bec0ecc5fe77a4e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -20.675053
+      objectReference: {fileID: 0}
+    - target: {fileID: 3643051925245339751, guid: 0aaa0671f4617b140bec0ecc5fe77a4e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3643051925245339751, guid: 0aaa0671f4617b140bec0ecc5fe77a4e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3643051925245339751, guid: 0aaa0671f4617b140bec0ecc5fe77a4e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3643051925245339751, guid: 0aaa0671f4617b140bec0ecc5fe77a4e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3643051925245339751, guid: 0aaa0671f4617b140bec0ecc5fe77a4e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3643051925245339751, guid: 0aaa0671f4617b140bec0ecc5fe77a4e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3643051925245339751, guid: 0aaa0671f4617b140bec0ecc5fe77a4e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7932990096368344180, guid: 0aaa0671f4617b140bec0ecc5fe77a4e,
+        type: 3}
+      propertyPath: m_Name
+      value: BulgarianAlien
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0aaa0671f4617b140bec0ecc5fe77a4e, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -76998,3 +77066,4 @@ SceneRoots:
   - {fileID: 996023860}
   - {fileID: 2037360341}
   - {fileID: 4162311878520192596}
+  - {fileID: 4320827354984231411}
