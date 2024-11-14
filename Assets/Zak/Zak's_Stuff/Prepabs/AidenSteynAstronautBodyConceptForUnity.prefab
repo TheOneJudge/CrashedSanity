@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5501955324065961398
 Transform:
   m_ObjectHideFlags: 0
@@ -359,7 +359,9 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
+    are already bound by a Humanoid avatar. These transforms can only be changed
+    by Humanoid clips.\n\tTransform 'upper_arm.R'\n\tFrom animation clip 'idleUI'"
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
@@ -403,6 +405,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 6043051619576972372}
+  walking: {fileID: 0}
+  jogging: {fileID: 0}
+  sprinting: {fileID: 0}
+  jumpSound: {fileID: 0}
+  landSound: {fileID: 0}
   playerSpeed: 5
   walkSpeed: 2
   sprintSpeed: 8
