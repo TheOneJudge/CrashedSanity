@@ -87,7 +87,8 @@ public class DiageticUiScript : MonoBehaviour
 
     public void OnDUIResume()
     {
-        OnDUIDisplay(false);
+        active = false;
+        OnDUIDisplay(active);
     }
 
     public void OnDUIPanel()
