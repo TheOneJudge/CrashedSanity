@@ -7,7 +7,6 @@ public class Movement : MonoBehaviour
     private CharacterController controller;
     private Vector3 playerVelocity;
     private bool groundedPlayer;
-    private bool hasLandSound = true;
     public Animator animator;
 
     public AudioSource walking;
@@ -94,7 +93,6 @@ public class Movement : MonoBehaviour
         if (context.started && groundedPlayer)
         {
             jumpRequest = true;
-            hasLandSound = true;
         }
     }
 
@@ -103,21 +101,10 @@ public class Movement : MonoBehaviour
         groundedPlayer = controller.isGrounded;
 
         // Reset vertical velocity if grounded (player is not falling)
-        if (groundedPlayer && playerVelocity.y < 0 )
+        if (groundedPlayer && playerVelocity.y < 0)
         {
             playerVelocity.y = 0f;
-            hasLandSound = false;
-
-            if (hasLandSound == true)
-            {
-                landSound.Play();  // Play landing sound
-            }
-
-            //landSound.Play();  // Play landing sound
-        }
-        else
-        {
-            hasLandSound=false;
+            landSound.Play();  // Play landing sound
         }
 
         // Convert movement input based on camera orientation
