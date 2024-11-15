@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.09440674, g: 0.05513788, b: 0.02374417, a: 1}
+  m_IndirectSpecularColor: {r: 0.17980959, g: 0.17980959, b: 0.17980959, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1925,8 +1925,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activationRadius: 25
-  generatorOn: {fileID: 0}
-  light: {fileID: 0}
+  generatorOn: {fileID: 9098168204440803700}
+  light: {fileID: 1826193213}
 --- !u!1 &190977891
 GameObject:
   m_ObjectHideFlags: 0
@@ -11326,6 +11326,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PressEPrompt
       objectReference: {fileID: 0}
+    - target: {fileID: 2370587970199205647, guid: e771306c10686f04b929cc68f507bde9,
+        type: 3}
+      propertyPath: gen
+      value: 
+      objectReference: {fileID: 186489396}
     - target: {fileID: 6698453727639192102, guid: e771306c10686f04b929cc68f507bde9,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -12617,6 +12622,11 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 1923572575}
+    - target: {fileID: 2370587970199205647, guid: e771306c10686f04b929cc68f507bde9,
+        type: 3}
+      propertyPath: gen
+      value: 
+      objectReference: {fileID: 690780729}
     - target: {fileID: 6698453727639192102, guid: e771306c10686f04b929cc68f507bde9,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -14056,6 +14066,11 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 1923572575}
+    - target: {fileID: 2370587970199205647, guid: e771306c10686f04b929cc68f507bde9,
+        type: 3}
+      propertyPath: gen
+      value: 
+      objectReference: {fileID: 690780730}
     - target: {fileID: 6698453727639192102, guid: e771306c10686f04b929cc68f507bde9,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -15521,6 +15536,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PressEPrompt
       objectReference: {fileID: 0}
+    - target: {fileID: 2370587970199205647, guid: e771306c10686f04b929cc68f507bde9,
+        type: 3}
+      propertyPath: gen
+      value: 
+      objectReference: {fileID: 828367864}
     - target: {fileID: 6698453727639192102, guid: e771306c10686f04b929cc68f507bde9,
         type: 3}
       propertyPath: m_LocalScale.x

@@ -79,6 +79,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pressEPanel: {fileID: 7615560210910073806}
   cam: {fileID: 0}
+  gen: {fileID: 0}
+  text: {fileID: 2186213413438267613}
   active: 0
 --- !u!95 &5372473322517731663
 Animator:
