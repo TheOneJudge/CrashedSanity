@@ -889,9 +889,9 @@ RectTransform:
   - {fileID: 4685552679464247885}
   m_Father: {fileID: 4322532179253208194}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 326, y: -772}
   m_SizeDelta: {x: 652, y: 324}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &327063733223306602
@@ -1471,9 +1471,9 @@ RectTransform:
   - {fileID: 6021437240132593727}
   m_Father: {fileID: 4322532179253208194}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 326, y: -162}
   m_SizeDelta: {x: 652, y: 324}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7411909436812484517
@@ -1783,9 +1783,9 @@ RectTransform:
   - {fileID: 3202837769520390673}
   m_Father: {fileID: 4322532179253208194}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 326, y: -1992}
   m_SizeDelta: {x: 652, y: 324}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8058188764161396279
@@ -4267,7 +4267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db82f6d90d9994448aad5ce99be6d287, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 6775438779130021252}
+  pauseMenuUI: {fileID: 5421351378895274704}
 --- !u!1 &5102660187546051360
 GameObject:
   m_ObjectHideFlags: 0
@@ -4807,9 +4807,9 @@ RectTransform:
   - {fileID: 3979739498090454027}
   m_Father: {fileID: 4322532179253208194}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 326, y: -1382}
   m_SizeDelta: {x: 652, y: 324}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7906321223536987330
@@ -5064,18 +5064,6 @@ MonoBehaviour:
       - m_Target: {fileID: 6330290086731445760}
         m_TargetAssemblyTypeName: UIScripts, Assembly-CSharp
         m_MethodName: Resume
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 8836783363178200563}
-        m_TargetAssemblyTypeName: DiageticUiScript, Assembly-CSharp
-        m_MethodName: OnDUIResume
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5435,7 +5423,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7196778768074123941}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
   m_Name: 
