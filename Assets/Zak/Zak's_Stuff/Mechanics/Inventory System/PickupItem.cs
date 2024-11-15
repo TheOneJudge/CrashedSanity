@@ -13,7 +13,7 @@ public class PickupItem : MonoBehaviour
     private void Update()
     {
         // Check if the player is within pickup range
-        if (isPlayerInRange && Input.GetKeyDown(KeyCode.Q)) // Check if E is pressed
+        if (isPlayerInRange && Input.GetKeyDown(KeyCode.E)) // Check if E is pressed
         {
             // Disable the object
             gameObject.SetActive(false);
