@@ -53,10 +53,27 @@ public class AlienAI : MonoBehaviour
             AlignToSurface();
         }
 
+        // Rotate child objects to face the waypoint
+        FaceWayPointChildren(targetWaypoint);
+
         // If not already patrolling, restart patrol sounds
         if (!audioSource.isPlaying && !isAttacking)
         {
             StartPatrolSounds();
+        }
+    }
+
+    void FaceWayPointChildren(Transform targetWaypoint)
+    {
+        Vector3 directionToWaypoint = targetWaypoint.position - transform.position;
+        directionToWaypoint.y = 0; // Ignore vertical rotation for horizontal alignment
+
+        Quaternion targetRotation = Quaternion.LookRotation(directionToWaypoint);
+
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            Transform child = transform.GetChild(i);
+            child.rotation = Quaternion.Slerp(child.rotation, targetRotation, Time.deltaTime * patrolSpeed);
         }
     }
 
@@ -73,7 +90,6 @@ public class AlienAI : MonoBehaviour
         {
             MoveTowards(player.position, attackSpeed);
         }
-        //MoveTowards(player.position, attackSpeed);
 
         // Stop patrol sounds and play chase sound
         if (patrolSoundCoroutine != null)
