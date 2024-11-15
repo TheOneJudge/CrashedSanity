@@ -5,11 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Cable
+  - DangerZone
+  - SafeZone
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Obstacle
   - Water
   - UI
   - 
