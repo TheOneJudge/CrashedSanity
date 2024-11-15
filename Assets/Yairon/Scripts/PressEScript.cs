@@ -3,7 +3,7 @@ using UnityEngine;
 public class PressEScript : MonoBehaviour
 {
 
-    [SerializeField] private GameObject pressEPanel;
+    [SerializeField] private GameObject pressEPanel, cam;
 
     [SerializeField] private bool active = false;
 
@@ -23,6 +23,11 @@ public class PressEScript : MonoBehaviour
     {
         active = false;
         pressEPanel.SetActive(active);
+    }
+
+    private void Update()
+    {
+        pressEPanel.transform.rotation = pressEPanel.transform.rotation;
     }
 
 }

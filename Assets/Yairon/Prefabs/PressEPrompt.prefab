@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7833253623538217833}
   - component: {fileID: 2370587970199205647}
   m_Layer: 0
-  m_Name: ComputerUIAsset
+  m_Name: PressEPrompt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
