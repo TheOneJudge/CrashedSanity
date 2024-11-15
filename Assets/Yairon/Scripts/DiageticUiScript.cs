@@ -56,7 +56,7 @@ public class DiageticUiScript : MonoBehaviour
         {
             
             canvas.SetActive(active);
-            //dCanvas.SetActive(active);
+            dCanvas.SetActive(active);
 
             playerAnim.SetBool("onDisplay", true);
             anim.SetBool("onDisplay", true);
@@ -83,6 +83,11 @@ public class DiageticUiScript : MonoBehaviour
         Cursor.visible = active;
 
 
+    }
+
+    public void OnDUIResume()
+    {
+        OnDUIDisplay(false);
     }
 
     public void OnDUIPanel()

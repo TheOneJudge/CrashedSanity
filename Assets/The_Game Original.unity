@@ -9071,7 +9071,7 @@ PrefabInstance:
         type: 3}
       propertyPath: cam
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2076454025}
     - target: {fileID: 8836783363178200563, guid: ca611a5b34f1cb04ba6334303951be1c,
         type: 3}
       propertyPath: playerAnim
