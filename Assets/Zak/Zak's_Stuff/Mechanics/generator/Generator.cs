@@ -6,7 +6,7 @@ public class Generator : MonoBehaviour
 {
     private bool isOn = false;
 
-    public float activationRadius = 30f;
+    public float activationRadius = 5f;
 
     private Transform player;
 
