@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3469748160804338416}
   - component: {fileID: 4307192841957549429}
   m_Layer: 0
-  m_Name: Image (2)
+  m_Name: SanityRed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,7 +71,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 1
-  m_FillAmount: 0
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 4653132630044682321}
   - component: {fileID: 8006033326176025345}
   m_Layer: 0
-  m_Name: Image (3)
+  m_Name: CPU
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -331,8 +331,8 @@ RectTransform:
   m_LocalScale: {x: 5.55, y: 5.55, z: 5.55}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 2385746488110581181}
   - {fileID: 771562232578787773}
+  - {fileID: 2385746488110581181}
   - {fileID: 6057119131419960763}
   m_Father: {fileID: 6518488469109620306}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -391,7 +391,7 @@ GameObject:
   - component: {fileID: 3472065770986160983}
   - component: {fileID: 4320677863267995953}
   m_Layer: 0
-  m_Name: Image (1)
+  m_Name: SanityBlue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -406,7 +406,7 @@ RectTransform:
   m_GameObject: {fileID: 8688678317042129677}
   m_LocalRotation: {x: 0.000000027939674, y: 0.000000029802319, z: 0.000000019324942,
     w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.0012, y: 0.0012, z: 0.0012}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -446,12 +446,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 6b06a658d8975cd439f192877d248305, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 1
   m_FillAmount: 1
   m_FillClockwise: 1
-  m_FillOrigin: 0
+  m_FillOrigin: 1
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
