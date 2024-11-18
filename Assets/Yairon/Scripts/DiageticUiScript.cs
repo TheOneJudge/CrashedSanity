@@ -78,18 +78,11 @@ public class DiageticUiScript : MonoBehaviour
 
             Cursor.lockState = CursorLockMode.Locked;
 
-            active = false;
-
         }
 
         Cursor.visible = active;
 
 
-    }
-
-    public void OnDUIResume()
-    {
-        OnDUIDisplay(false);
     }
 
     public void OnDUIPanel()

@@ -43,7 +43,7 @@ public class Movement : MonoBehaviour
     private bool isWalking = false;
     private bool isSprinting = false;
 
-    private float currentSpeed; // Current speed of the player, which will gradually increase
+    public float currentSpeed; // Current speed of the player, which will gradually increase
 
     private void Start()
     {
@@ -175,18 +175,21 @@ public class Movement : MonoBehaviour
             if (!walking.isPlaying) walking.Play();
             if (jogging.isPlaying) jogging.Stop();
             if (sprinting.isPlaying) sprinting.Stop();
+            Debug.Log("walksound");
         }
         else if (speed >= 10f && speed < 20f)
         {
             if (!jogging.isPlaying) jogging.Play();
             if (walking.isPlaying) walking.Stop();
             if (sprinting.isPlaying) sprinting.Stop();
+            Debug.Log("jogsound");
         }
         else if (speed >= 20f)
         {
             if (!sprinting.isPlaying) sprinting.Play();
             if (walking.isPlaying) walking.Stop();
             if (jogging.isPlaying) jogging.Stop();
+            Debug.Log("sprintsound");
         }
         else
         {
@@ -194,6 +197,7 @@ public class Movement : MonoBehaviour
             if (walking.isPlaying) walking.Stop();
             if (jogging.isPlaying) jogging.Stop();
             if (sprinting.isPlaying) sprinting.Stop();
+            Debug.Log("stillsound");
         }
     }
 }

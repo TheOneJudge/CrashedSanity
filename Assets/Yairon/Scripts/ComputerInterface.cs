@@ -45,7 +45,7 @@ public class ComputerInterface : MonoBehaviour
             if (Input.GetKeyUp(KeyCode.E))
             {
                 ePress = true;
-                sanityBarCanvas.SetActive(false);
+                sanityBarCanvas.SetActive(false );
                 EnterPassword();
             }       
         }

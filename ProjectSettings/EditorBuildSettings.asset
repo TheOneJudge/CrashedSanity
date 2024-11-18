@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Yairon/Scene/The_Game FLOOR1Yai.unity
     guid: 21014ecac4436f04c818ac5d66f79a1a
+  - enabled: 1
+    path: Assets/The_Game FLOOR2.unity
+    guid: 4d354cfd5bfcb064a8b87a5842c76391
+  - enabled: 1
+    path: Assets/The_Game FLOOR1.unity
+    guid: 65a6c319351bf5f4b879d7ce1305c9b9
   m_configObjects: {}

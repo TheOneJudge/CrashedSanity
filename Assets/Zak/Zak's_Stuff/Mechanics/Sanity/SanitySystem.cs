@@ -33,14 +33,14 @@ public class SanitySystem : MonoBehaviour
     {
         currentSanity -= sanityDecreaseRate * Time.deltaTime;
         currentSanity = Mathf.Max(currentSanity, 0f);  // Clamp to minimum of 0
-        //Debug.Log("Sanity Decreasing: " + currentSanity);
+        Debug.Log("Sanity Decreasing: " + currentSanity);
     }
 
     void IncreaseSanity()
     {
         currentSanity += sanityIncreaseRate * Time.deltaTime;
         currentSanity = Mathf.Min(currentSanity, maxSanity);  // Clamp to maxSanity
-        //Debug.Log("Sanity Increasing: " + currentSanity);
+        Debug.Log("Sanity Increasing: " + currentSanity);
     }
 
     private void OnTriggerEnter(Collider other)
