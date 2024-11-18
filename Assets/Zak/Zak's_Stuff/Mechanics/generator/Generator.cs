@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Generator : MonoBehaviour
 {
-    private bool isOn = false;
+    [SerializeField] private bool isOn = false;
 
     public float activationRadius = 5f;
 

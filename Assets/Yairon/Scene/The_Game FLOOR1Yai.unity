@@ -2464,6 +2464,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4555596255531609433, guid: 7a00713696be28e4a8fa428eee6c855e,
+        type: 3}
+      propertyPath: near clip plane
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 5427455638354857262, guid: 7a00713696be28e4a8fa428eee6c855e,
         type: 3}
       propertyPath: m_Name
@@ -6699,7 +6704,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sanityBarCanvas
       value: 
-      objectReference: {fileID: 455389030}
+      objectReference: {fileID: 456556143}
     - target: {fileID: 8481041672045219242, guid: cec5729fd801d1c4d85b59f81b57a793,
         type: 3}
       propertyPath: m_LocalScale.x

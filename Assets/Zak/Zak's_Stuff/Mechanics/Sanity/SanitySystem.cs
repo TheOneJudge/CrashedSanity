@@ -8,7 +8,7 @@ public class SanitySystem : MonoBehaviour
     public float sanityDecreaseRate = 5f;  // The rate at which sanity decreases in the DangerZone
     public float sanityIncreaseRate = 3f;  // The rate at which sanity increases in the SafeZone
 
-    private float currentSanity;
+    public float currentSanity;
     private bool inDangerZone = false;
     private bool inSafeZone = false;
 
@@ -33,14 +33,14 @@ public class SanitySystem : MonoBehaviour
     {
         currentSanity -= sanityDecreaseRate * Time.deltaTime;
         currentSanity = Mathf.Max(currentSanity, 0f);  // Clamp to minimum of 0
-        Debug.Log("Sanity Decreasing: " + currentSanity);
+        //Debug.Log("Sanity Decreasing: " + currentSanity);
     }
 
     void IncreaseSanity()
     {
         currentSanity += sanityIncreaseRate * Time.deltaTime;
         currentSanity = Mathf.Min(currentSanity, maxSanity);  // Clamp to maxSanity
-        Debug.Log("Sanity Increasing: " + currentSanity);
+        //Debug.Log("Sanity Increasing: " + currentSanity);
     }
 
     private void OnTriggerEnter(Collider other)
