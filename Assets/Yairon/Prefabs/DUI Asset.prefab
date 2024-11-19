@@ -200,7 +200,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: cyberpanda
+  m_text: digitalduck
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f4582e46cb6075247b7626f8685c751e, type: 2}
   m_sharedMaterial: {fileID: 681077766514253351, guid: f4582e46cb6075247b7626f8685c751e,
@@ -1145,9 +1145,9 @@ RectTransform:
   - {fileID: 4685552679464247885}
   m_Father: {fileID: 4322532179253208194}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 326, y: -772}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 652, y: 324}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &327063733223306602
@@ -1727,9 +1727,9 @@ RectTransform:
   - {fileID: 6021437240132593727}
   m_Father: {fileID: 4322532179253208194}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 326, y: -162}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 652, y: 324}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7411909436812484517
@@ -2039,9 +2039,9 @@ RectTransform:
   - {fileID: 3202837769520390673}
   m_Father: {fileID: 4322532179253208194}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 326, y: -1992}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 652, y: 324}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8058188764161396279
@@ -5321,9 +5321,9 @@ RectTransform:
   - {fileID: 3979739498090454027}
   m_Father: {fileID: 4322532179253208194}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 326, y: -1382}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 652, y: 324}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7906321223536987330
@@ -6547,7 +6547,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: byteme
+  m_text: lunarllama
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f4582e46cb6075247b7626f8685c751e, type: 2}
   m_sharedMaterial: {fileID: 681077766514253351, guid: f4582e46cb6075247b7626f8685c751e,

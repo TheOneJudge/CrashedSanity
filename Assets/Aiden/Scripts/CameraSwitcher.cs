@@ -7,15 +7,34 @@ public class CameraSwitcher : MonoBehaviour
 
     private Camera activeCamera;
 
+    //private ComputerInterface compInt;
+
     void Start()
     {
         // Ensure only the main camera is active at the start
         SetActiveCamera(mainCamera);
     }
 
-    /*void Update()
+    void Update()
     {
-        // Check for camera switching keys
+
+      /*  if (compInt.AccessCams())
+        {
+            foreach (Camera cam in surveillanceCameras)
+            {
+                cam.gameObject.SetActive(true);
+            }
+        }
+        else
+        {
+            foreach (Camera cam in surveillanceCameras)
+            {
+                cam.gameObject.SetActive(false);
+            }
+        }*/
+        
+        
+        /*// Check for camera switching keys
         if (Input.GetKeyDown(KeyCode.Alpha1))
             SwitchToSurveillanceCamera(0);
         else if (Input.GetKeyDown(KeyCode.Alpha2))
@@ -27,8 +46,8 @@ public class CameraSwitcher : MonoBehaviour
 
         // Return to main camera
         if (Input.GetKeyDown(KeyCode.E))
-            SetActiveCamera(mainCamera);
-    }*/
+            SetActiveCamera(mainCamera);*/
+    }
 
     void SwitchToSurveillanceCamera(int index)
     {
@@ -48,5 +67,23 @@ public class CameraSwitcher : MonoBehaviour
         // Activate the selected camera
         cameraToActivate.gameObject.SetActive(true);
         activeCamera = cameraToActivate;
+    }
+
+    public void ActivateSurveillanceCameras(bool active)
+    {
+        if (active)
+        {
+            foreach (Camera cam in surveillanceCameras)
+            {
+                cam.gameObject.SetActive(true);
+            }
+        }
+        else
+        {
+            foreach (Camera cam in surveillanceCameras)
+            {
+                cam.gameObject.SetActive(false);
+            }
+        }
     }
 }

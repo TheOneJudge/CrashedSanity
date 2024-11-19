@@ -15,6 +15,9 @@ public class ComputerInterface : MonoBehaviour
     private bool triggered = false;
     private bool ePress = false;
 
+    public bool accessCams = false;
+
+    public CameraSwitcher camSwitch;
 
     [Header("Password")]
 
@@ -126,6 +129,9 @@ public class ComputerInterface : MonoBehaviour
             menuPanel.SetActive(correct);
             Cursor.lockState = CursorLockMode.None;
 
+            accessCams = true;
+            camSwitch.ActivateSurveillanceCameras(accessCams);
+
             passwordInput.interactable = false;
             passwordPanel.SetActive(false);
         }
@@ -134,10 +140,12 @@ public class ComputerInterface : MonoBehaviour
         {
             menuPanel.SetActive(false);
             Cursor.lockState = CursorLockMode.Locked;
+            accessCams = false;
+            camSwitch.ActivateSurveillanceCameras(accessCams);
 
         }
-        
-        
+
+
 
 
         /*if (ePress)
@@ -156,10 +164,6 @@ public class ComputerInterface : MonoBehaviour
         //Cursor.visible = ePress;
     }
 
-    private void CloseMenu()
-    {
-
-    }
 
     [SerializeField] public void PassCheck()
     {
