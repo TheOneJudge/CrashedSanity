@@ -227,7 +227,7 @@ GameObject:
   - component: {fileID: 6634239499557629081}
   - component: {fileID: 8207850649711947014}
   m_Layer: 0
-  m_Name: ComputerUIAssetNew
+  m_Name: TutorialComputerInterface
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

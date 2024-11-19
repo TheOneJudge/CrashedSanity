@@ -20,6 +20,11 @@ public class Generator : MonoBehaviour
         return isOn;
     }
 
+    public void Activate()
+    {
+        isOn = true;
+    }
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
