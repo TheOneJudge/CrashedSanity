@@ -13,14 +13,14 @@ public class NewDoor : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) 
     {
-        if(other.CompareTag("Player") || other.CompareTag("Alien"))
+        if(other.CompareTag("Player"))
         {
             doorAnim.SetTrigger("Open");
         }
     }
     private void OnTriggerExit(Collider other) 
     {
-        if(other.CompareTag("Player") || other.CompareTag("Alien"))
+        if(other.CompareTag("Player"))
         {
             doorAnim.SetTrigger("Closed");
         }
